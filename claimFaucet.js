@@ -1,5 +1,5 @@
 const axios = require("axios");
-import { addresses } from "./addresses.js";
+const { addresses } = require("./addresses.js");
 
 // URL de l'API du faucet
 const faucetApiUrl = "https://testnet-api.onefinity.network/faucet";
