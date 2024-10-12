@@ -34,5 +34,5 @@ export const addresses = [
 Claim your ONE
 
 ```bash
-npm run Claim
+npm run claim
 ```
