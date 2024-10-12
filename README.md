@@ -6,7 +6,7 @@
 Clone this repository :
 
 ```bash
-git clone https...
+git clone https://github.com/elpulpo0/ClaimFaucet
 ```
 
 # Step 2
