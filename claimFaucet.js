@@ -21,7 +21,7 @@ async function claimTokens(address) {
     if (axios.isAxiosError(error)) {
       // If Axios error, Display message error
       console.error(
-        `Error when claiming for adress ${address}: ${
+        `Error when claiming for address ${address}: ${
           error.response?.data.message || error.message
         }`
       );
