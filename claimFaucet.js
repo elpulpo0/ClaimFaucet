@@ -1,34 +1,34 @@
 const axios = require("axios");
 const { addresses } = require("./addresses.js");
 
-// URL de l'API du faucet
+// Faucet API URL
 const faucetApiUrl = "https://testnet-api.onefinity.network/faucet";
 
 async function claimTokens(address) {
   try {
-    // Appel à l'API du faucet avec l'adresse
+    // Calling the Faucet API for an address
     const response = await axios.post(faucetApiUrl, {
       address: address,
     });
 
-    // Afficher la réponse de l'API
+    // Display API response
     console.log(
-      `Réclamation réussie pour l'adresse ${address}, `,
+      `Claim succesful for address ${address}, `,
       `txHash: `,
       response.data.txHash
     );
   } catch (error) {
     if (axios.isAxiosError(error)) {
-      // Si l'erreur est une erreur Axios, afficher le message d'erreur
+      // If Axios error, Display message error
       console.error(
-        `Erreur lors de la réclamation pour l'adresse ${address}: ${
+        `Error when claiming for adress ${address}: ${
           error.response?.data.message || error.message
         }`
       );
     } else {
-      // Autres erreurs
+      // Other errors
       console.error(
-        `Erreur lors de la réclamation pour l'adresse ${address}: ${
+        `Error when claiming for address ${address}: ${
           error instanceof Error ? error.message : String(error)
         }`
       );
