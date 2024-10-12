@@ -19,7 +19,7 @@ npm install
 
 ### Step 3
 
-Fil in the adresses.js file with your evm adresses
+Fil in the addresses.js file with your evm adresses
 
 ```js
 export const addresses = [
