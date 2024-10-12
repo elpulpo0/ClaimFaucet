@@ -1,5 +1,5 @@
 # Claim 5 ONE on offical OneFinity Faucet for mutliple adresses at once.
-hey needs to be have a balance lower than 1 ONE
+They needs to be have a balance lower than 1 ONE
 
 ### Step 1
 
