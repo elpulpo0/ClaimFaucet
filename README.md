@@ -19,14 +19,16 @@ npm install
 
 ### Step 3
 
-Fil in the addresses.js file with your evm adresses
+Create a addresses.js file with your evm adresses at the root, exactly like this
 
 ```js
 export const addresses = [
-  "0xaddress1", 
-  "0xaddress2", 
-  "0xaddress3"
+  "0xaddress1",
+  "0xaddress2",
+  "0xaddress3",
 ];
+
+module.exports = { addresses };
 ```
 
 ### Step 4
